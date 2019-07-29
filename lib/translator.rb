@@ -19,6 +19,6 @@ end
 
 def get_english_meaning(yaml_file, j_emo)
   data = load_library(yaml_file)
-  a = data[:get_meaning][j_emo] ? 
+  a = data[:get_meaning][j_emo] ? data[:get_meaning][j_emo] : "Sorry"
     
 end
