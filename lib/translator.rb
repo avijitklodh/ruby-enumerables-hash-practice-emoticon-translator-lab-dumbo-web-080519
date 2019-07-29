@@ -19,7 +19,7 @@ end
 
 def get_english_meaning(yaml_file, j_emo)
   data = load_library(yaml_file)
-  if data[:get_meaning].key?
+  if data[:get_meaning].key?(j_emo) 
     a = data[:get_meaning][j_emo] 
   else
     a = "Sorry, that emoticon was not found"
